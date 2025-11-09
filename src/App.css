@@ -1,20 +1,20 @@
 .box-travel {
-    box-shadow: 15px 18px 13px #777777;
+	box-shadow: 15px 18px 13px #777777;
+	transition: all 0.4s ease;
 }
 .box-img {
-    width: 100%;
-    height: 65%;
-    object-fit: cover;
+	width: 100%;
+	height: 65%;
+	object-fit: cover;
 }
 
-
-@media screen and (min-width: 400px){
-    .box-travel:hover {
-        width: 35%;
-    };
+@media screen and (min-width: 400px) {
+	.box-travel:hover {
+		width: 35%;
+	}
 }
-@media screen and (max-width: 990px){
-    .box-travel:hover {
-        width: 45%;
-    };
+@media screen and (max-width: 990px) {
+	.box-travel:hover {
+		width: 45%;
+	}
 }

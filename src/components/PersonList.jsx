@@ -1,10 +1,15 @@
 import partecipanti from "../data/partecipanti";
 import SinglePerson from "./SinglePerson";
 
-const PersonList = () => {
+const PersonList = ({ search }) => {
+	const query = (search || "").toLowerCase().trim();
+	const filteredPersons = partecipanti.filter((t) =>
+		`${t.nome} ${t.cognome}`.toLowerCase().includes(query),
+	);
+
 	return (
 		<div className="container-wide">
-			{partecipanti.map((person) => (
+			{filteredPersons.map((person) => (
 				<SinglePerson key={person.id} person={person} />
 			))}
 		</div>

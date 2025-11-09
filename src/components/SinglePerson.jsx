@@ -7,6 +7,9 @@ export default function SinglePerson({ person }) {
 		setIsOpen(!isOpen);
 	}
 
+	const telLink = `tel:${person.telefono}`; // link diretto alla chiamata
+	const mailLink = `mailto:${person.email}`; // link diretto alla chiamata
+
 	return (
 		<div
 			onClick={showDetails}
@@ -17,8 +20,16 @@ export default function SinglePerson({ person }) {
 			</h2>
 			{isOpen && (
 				<div>
-					<h5>Email: {person.email}</h5>
-					<h5>Telefono: {person.telefono}</h5>
+					<h5>
+						<a href={mailLink}>
+							Email: <span className="text-info">{person.email}</span>
+						</a>
+					</h5>
+					<h5>
+						<a href={telLink}>
+							Telefono: <span className="text-info">{person.telefono}</span>
+						</a>
+					</h5>
 					<h5>CF: {person.CF}</h5>
 				</div>
 			)}
