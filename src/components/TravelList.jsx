@@ -1,19 +1,40 @@
 // TravelList.jsx
+import { useState, useEffect } from "react";
 import viaggi from "../data/viaggi";
 import SingleTravel from "./SingleTravel";
 
 const TravelList = ({ search }) => {
+	const [visibleCount, setVisibleCount] = useState(10);
+
+	useEffect(() => {
+		setVisibleCount(10);
+	}, [search]);
 	const query = (search || "").toLowerCase().trim();
 	const filteredViaggi = viaggi.filter((t) =>
 		`${t.nazione} ${t.destinazione}`.toLowerCase().includes(query),
 	);
+	const displayedViaggi = filteredViaggi.slice(0, visibleCount);
 
 	return (
 		<div className="container-wide d-flex flex-wrap gap-5 p-0 justify-content-center align-items-stretch">
-			{filteredViaggi.length === 0 ? (
+			{displayedViaggi.length === 0 ? (
 				<p>Nessun viaggio trovato corrispondente alla tua ricerca.</p>
 			) : (
-				filteredViaggi.map((trav) => <SingleTravel key={trav.id} trav={trav} />)
+				<>
+					{displayedViaggi.map((trav) => (
+						<SingleTravel key={trav.id} trav={trav} />
+					))}
+					{filteredViaggi.length > visibleCount && (
+						<div className="w-100 d-flex justify-content-center mt-3">
+							<button
+								className="btn btn-primary"
+								onClick={() => setVisibleCount((prev) => prev + 10)}
+							>
+								Carica altri
+							</button>
+						</div>
+					)}
+				</>
 			)}
 		</div>
 	);
