@@ -1,6 +1,14 @@
 const viaggi = [
 	{
 		id: 1,
+		destinazione: "Medjugorje",
+		img: "https://www.bassanonet.it//download/2013/05/3c4a3d8_brosioamedjugorje13.jpg",
+		dataInizio: "28/12/2025",
+		dataFine: "03/01/2026",
+		luogoDiCulto: "Santuario di Nostra Signora di Medjugorje",
+	},
+	{
+		id: 2,
 		destinazione: "Parigi",
 		img: "https://www.aviontourism.com/images/1260-1260-fix/0c4d1ff2-dc66-49ce-a15e-cbe6e19b9b5e",
 		nazione: "Francia",
@@ -9,7 +17,7 @@ const viaggi = [
 		luogoDiCulto: "Cattedrale di Notre-Dame",
 	},
 	{
-		id: 2,
+		id: 3,
 		destinazione: "Tokyo",
 		img: "https://www.advantour.com/img/japan/images/tokyo.jpg",
 		nazione: "Giappone",
@@ -18,7 +26,7 @@ const viaggi = [
 		luogoDiCulto: "Tempio Sensō-ji",
 	},
 	{
-		id: 3,
+		id: 4,
 		destinazione: "New York",
 		img: "https://www.viaggiareinusa.com/wp-content/uploads/2024/05/new-york-statua-della-liberta.webp",
 		nazione: "USA",
@@ -27,7 +35,7 @@ const viaggi = [
 		luogoDiCulto: "Cattedrale di San Patrizio",
 	},
 	{
-		id: 4,
+		id: 5,
 		destinazione: "Barcellona",
 		img: "https://www.spagna.info/wp-content/uploads/sites/39/barcellona-sagrada-familia-arcobaleno.jpg",
 		nazione: "Spagna",
@@ -36,7 +44,7 @@ const viaggi = [
 		luogoDiCulto: "Sagrada Família",
 	},
 	{
-		id: 5,
+		id: 6,
 		destinazione: "Reykjavík",
 		img: "https://www.islanda.it/uploads/media/reykjavik-la-capitale-islandese-65c272f9e956e388299051.jpg",
 		nazione: "Islanda",
@@ -45,7 +53,7 @@ const viaggi = [
 		luogoDiCulto: "Hallgrímskirkja",
 	},
 	{
-		id: 6,
+		id: 7,
 		destinazione: "Sydney",
 		img: "https://www.imaway.it/wp-content/webp-express/webp-images/uploads/2024/08/viaggio-sidney-2.jpg.webp",
 		nazione: "Australia",
@@ -54,7 +62,7 @@ const viaggi = [
 		luogoDiCulto: "St Mary's Cathedral",
 	},
 	{
-		id: 7,
+		id: 8,
 		destinazione: "Roma",
 		img: "https://tourismmedia.italia.it/is/image/mitur/20220127150143-colosseo-roma-lazio-shutterstock-756032350?wid=1600&hei=900&fit=constrain,1&fmt=webp",
 		nazione: "Italia",
@@ -63,7 +71,7 @@ const viaggi = [
 		luogoDiCulto: "Basilica di San Pietro",
 	},
 	{
-		id: 8,
+		id: 9,
 		destinazione: "Londra",
 		img: "https://www.dltviaggi.it/immagine/17827/Londra%201.jpg",
 		nazione: "Regno Unito",
@@ -72,7 +80,7 @@ const viaggi = [
 		luogoDiCulto: "Abbazia di Westminster",
 	},
 	{
-		id: 9,
+		id: 10,
 		destinazione: "Toronto",
 		img: "https://cascatedelniagara.com/wp-content/uploads/2017/03/cosa-visitare-a-toronto-1.jpg",
 		nazione: "Canada",
@@ -81,7 +89,7 @@ const viaggi = [
 		luogoDiCulto: "St. Michael’s Cathedral Basilica",
 	},
 	{
-		id: 10,
+		id: 11,
 		destinazione: "Bali",
 		img: "https://cdn.audleytravel.com/2478/1770/79/16027396-pura-ulun-danu-bratan-bali.jpg",
 		nazione: "Indonesia",
@@ -89,6 +97,15 @@ const viaggi = [
 		dataFine: "29/11/2025",
 		luogoDiCulto: "Tempio di Uluwatu",
 	},
+	{
+		id: 12,
+		destinazione: "Santorini",
+		img: "https://www.grecia.info/wp-content/uploads/sites/71/santorini-tramonto.jpg",
+		nazione: "Grecia",
+		dataInizio: "20/12/2025",
+		dataFine: "27/12/2025",
+		luogoDiCulto: "Cattedrale Metropolitana di Ypapanti",
+	}
 ];
 
 export default viaggi;
