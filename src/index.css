@@ -1,6 +1,10 @@
 a {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 /* Custom wider container */
@@ -32,17 +36,22 @@ a {
 
 @media (min-width: 1200px) {
   .container-wide {
-    max-width: 1400px; /* Wider than Bootstrap's 1140px */
+    max-width: 1400px;
+    /* Wider than Bootstrap's 1140px */
   }
 }
 
 @media (min-width: 1400px) {
   .container-wide {
-    max-width: 1600px; /* Even wider */
+    max-width: 1600px;
+    /* Even wider */
   }
 }
 
-body::-webkit-scrollbar {
-  display: none;
+body {
+  background-color: #fffff0;
 }
 
+header {
+  background-color: #0F172A;
+}

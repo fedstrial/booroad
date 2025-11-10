@@ -7,7 +7,7 @@ const HomePage = () => {
 
 	return (
 		<div className="container-wide">
-			<h1>Viaggi disponibili</h1>
+			<h1 className="pt-3">Viaggi disponibili</h1>
 			<HomeSearchBar search={search} onSearch={setSearch} />
 			<TravelList search={search} />
 		</div>

@@ -27,7 +27,7 @@ const TravelList = ({ search }) => {
 					{filteredViaggi.length > visibleCount && (
 						<div className="w-100 d-flex justify-content-center mt-3">
 							<button
-								className="btn btn-primary"
+								className="btn btn-success"
 								onClick={() => setVisibleCount((prev) => prev + 10)}
 							>
 								Carica altri

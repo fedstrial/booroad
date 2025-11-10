@@ -8,14 +8,10 @@ export default function MyHeader() {
 	const isAddPage = location.pathname.endsWith("add");
 	const navigate = useNavigate();
 	return (
-		<header className="bg-light">
+		<header>
 			<div className="container-wide py-1 d-flex justify-content-between align-items-center">
 				<Link to="/">
-					<img
-						src={logo}
-						alt="BooRoad"
-						style={{ height: "180px", width: "180px" }}
-					/>
+					<img src={logo} alt="BooRoad" id="logo" />
 				</Link>
 				<div>
 					{isHomepage && (

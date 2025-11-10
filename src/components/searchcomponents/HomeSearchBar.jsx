@@ -5,7 +5,7 @@ const HomeSearchBar = ({ search, onSearch }) => {
 	};
 
 	return (
-		<div className="container-wide input-group flex-nowrap mb-5 mt-5">
+		<div className="container-wide input-group flex-nowrap mb-4 mt-4">
 			<span className="input-group-text" id="addon-wrapping">
 				🔎
 			</span>
