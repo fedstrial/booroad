@@ -19,7 +19,7 @@ export default function SinglePerson({ person }) {
 				{person.nome} {person.cognome}
 			</h2>
 			{isOpen && (
-				<div>
+				<div className="accordion-appear">
 					<h5>
 						<a href={mailLink}>
 							Email: <span className="text-info">{person.email}</span>

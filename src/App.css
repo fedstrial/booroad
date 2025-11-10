@@ -16,3 +16,13 @@
 .pointer {
     cursor: pointer;
 }
+
+.accordion-appear {
+animation: accFadeSlide 500ms ease both;
+transform-origin: top;
+}
+
+@keyframes accFadeSlide {
+from { opacity: 0; transform: translateY(-6px) scaleY(0.98); }
+to { opacity: 1; transform: translateY(0) scaleY(1); }
+}
