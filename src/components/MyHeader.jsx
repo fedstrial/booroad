@@ -5,6 +5,9 @@ export default function MyHeader() {
 	const location = useLocation();
 	const isHomepage = location.pathname === "/";
 	const isTravelPage = /^\/users\/\d+$/.test(location.pathname);
+	const idPageAdd =
+		"users/" + location.pathname.substring("/users/".length) + "/add";
+
 	const isAddPage = location.pathname.endsWith("add");
 	const navigate = useNavigate();
 	return (
@@ -23,7 +26,7 @@ export default function MyHeader() {
 					)}
 					{isTravelPage && (
 						<div className="d-flex gap-3">
-							<Link to="users/add" className="btn btn-success">
+							<Link to={idPageAdd} className="btn btn-success">
 								Aggiungi un partecipante
 							</Link>
 							<Link to="/" className="btn btn-success">
