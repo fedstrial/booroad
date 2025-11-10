@@ -14,7 +14,7 @@ const PersonsSearchBar = ({ search, onSearch }) => {
 				onChange={handleChange}
 				type="text"
 				className="form-control"
-				placeholder="Cerca Viaggiante.."
+				placeholder="Cerca partecipante..."
 				aria-label="Search"
 				aria-describedby="addon-wrapping"
 			/>
