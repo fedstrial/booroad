@@ -7,7 +7,7 @@ const TravelPage = () => {
 
 	return (
 		<>
-			<div className="container-wide d-flex flex-wrap gap-3 justify-content-center">
+			<div className="container-wide d-flex flex-wrap justify-content-center">
 				<h1 className="pt-3">Partecipanti al viaggio</h1>
 				<PersonsSearchBar search={search} onSearch={setSearch} />
 				<PersonList search={search} />

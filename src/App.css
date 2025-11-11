@@ -35,19 +35,30 @@
 	}
 }
 
-#logo {
-	width: 180px;
-	height: 180px;
+.logo-desktop {
+	width: 400px;
+	height: 90px;
+}
+
+.logo-mobile {
+  	width: 150px;
+	height: 90px;
 }
 
 @media (max-width: 576px) {
 	#logo {
 		width: 120px;
-		height: 120px;
+		height: 70px;
 	}
 
 	.box-travel:hover {
 		transform: none;
 		transition: none;
 	}
+}
+
+.btn {
+	color: white;
+	background-color: #FF4559;
+	border-color: white;
 }

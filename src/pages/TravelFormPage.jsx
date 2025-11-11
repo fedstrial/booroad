@@ -100,7 +100,7 @@ export default function TravelFormPage() {
 							required
 						/>
 					</div>
-					<button type="submit" className="btn btn-success">
+					<button type="submit" className="btn btn-danger">
 						Submit
 					</button>
 				</form>

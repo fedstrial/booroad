@@ -16,7 +16,7 @@ export default function SingleTravel(props) {
 				<h3 className="d-block me-2 p-1">{trav.destinazione}</h3>
 				<span className="fst-italic p-1">{trav.nazione}</span>
 				<p className="mt-2 mb-1 p-1">{trav.luogoDiCulto}</p>
-				<p className="mb-0 p-1">
+				<p className="mb-0 pb-3">
 					<i>{trav.dataInizio}</i> - <span>{trav.dataFine}</span>
 				</p>
 				{/* </section> */}

@@ -16,7 +16,7 @@ const TravelList = ({ search }) => {
 	const displayedViaggi = filteredViaggi.slice(0, visibleCount);
 
 	return (
-		<div className="container-wide d-flex flex-wrap gap-5 p-0 justify-content-center align-items-stretch">
+		<div className="container-wide d-flex flex-wrap gap-5 pb-5 justify-content-center align-items-stretch">
 			{displayedViaggi.length === 0 ? (
 				<p>Nessun viaggio trovato corrispondente alla tua ricerca.</p>
 			) : (
@@ -25,9 +25,9 @@ const TravelList = ({ search }) => {
 						<SingleTravel key={trav.id} trav={trav} />
 					))}
 					{filteredViaggi.length > visibleCount && (
-						<div className="w-100 d-flex justify-content-center mt-3">
+						<div className="w-100 d-flex justify-content-center mt-2 pb-5">
 							<button
-								className="btn btn-success"
+								className="btn btn-danger"
 								onClick={() => setVisibleCount((prev) => prev + 10)}
 							>
 								Carica altri
